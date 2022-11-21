@@ -1,0 +1,82 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    --s: 150px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #F0E6EF; /* the color */
+    
+    width: var(--s);
+    outline: calc(var(--s)/2) solid #F0E6EF;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #9C89B8;
+    border-bottom: 6px solid #8093F1;
+    border-right: 6px solid #8093F1;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #967AA1;
+    height: 150px;
+    position: relative;
+    background-color: #FDC5F5;
+    animation-name: example;
+    animation-duration: 4s;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+
+@keyframes example {
+  0%   {background-color:#FDC5F5; left:0px; top:0px;}
+  25%  {background-color:#BDB2FF; left:200px; top:0px;}
+  50%  {background-color:#A3C4F3; left:200px; top:200px;}
+  75%  {background-color:#90DBF4; left:0px; top:200px;}
+  100% {background-color:#8EECF5; left:0px; top:0px;}
+}
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
